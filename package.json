@@ -1,0 +1,91 @@
+{
+  "name": "web-dev-test",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "browserslist": [
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "lint-staged": {
+    "**/*.ts?(x)": [
+      "prettier --write",
+      "eslint"
+    ],
+    "**/*.(ts)?(x)": "npm run type-check",
+    "./*.md": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.0"
+  },
+  "scripts": {
+    "update:production": "npm run production update",
+    "update:staging": "npm run staging update",
+    "update": "npm run build && npm run deploy",
+    "deploy:production": "npm run production deploy",
+    "deploy:staging": "npm run staging deploy",
+    "deploy": "gcloud app deploy --appyaml=app.${ENV}.yaml app.${ENV}.yaml --project=${PROJECT_ID}",
+    "dispatch-domian:production": "npm run production dispatch-domian",
+    "dispatch-domian": "gcloud app deploy dispatch.yaml --project=${PROJECT_ID}",
+    "production": "dotenv-run-script .env.production --",
+    "staging": "dotenv-run-script .env.staging --",
+    "development": "dotenv-run-script .env.development --",
+    "dev": "next dev --port=5170",
+    "start": "npx http-server --port=5170 build",
+    "build": "next build",
+    "sitemap": "next-sitemap --config next-sitemap.config.cjs",
+    "lint": "next lint && prettier --write \"**/*.ts?(x)\" && eslint --fix \"**/*.ts?(x)\"",
+    "test": "npm run lint",
+    "lint-staged": "lint-staged",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo ",
+    "indexpages": "npm run production indexnow",
+    "indexnow": "node ./indexnow.js",
+    "next": "next",
+    "next-sitemap": "next-sitemap",
+    "prettier": "prettier",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^8.2.1",
+    "next": "14.2.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@headlessui/react": "^1.7.19",
+    "@headlessui/tailwindcss": "^0.2",
+    "@next/bundle-analyzer": "^14.2.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "autoprefixer": "^10.4.19",
+    "commitlint": "^19.3.0",
+    "dotenv-run-script": "^0.4.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.1",
+    "fluid-tailwind": "^0.1.6",
+    "http-server": "^14.1.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "next-sitemap": "^4.2.3",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5"
+  }
+}

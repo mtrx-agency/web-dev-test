@@ -1,0 +1,48 @@
+.stjr-review-page-widget-header,
+.stjr-reviews-page-reviews,
+.stjr-review-page-pagination__link,
+.stjr-container .stjr-review-helpful .grayArrowLeft:after {
+    background-color: #ffffff !important;
+}
+.stjr-review-page-widget {
+    border: 1px solid #f3f4fc !important;
+}
+.stjr-review-page-pagination__link--current, .stjr-review-page-pagination__link:hover,
+.stjr-review-page-pagination__link:hover a, .stjr-review-page-pagination__next
+.stjr-review-page-pagination__link, .stjr-review-page-pagination__previous
+.stjr-review-page-pagination__link{
+    background-color: #969696 !important;
+    color: #ffffff !important;
+}
+
+span.stjr-review-page-pagination__link, a.stjr-review-page-pagination__link,
+a.stjr-review-page-pagination__link__link{
+    color: #969696 !important;
+}
+
+.stjr-review-page-widget .stars--widgets .star.custom-icon-star2, .stjr-review-page-widget
+.stars--widgets .star.custom-icon-star2-full, .stjr-review-page-widget .stars--widgets
+.star.custom-icon-star2-half-left {
+    color: #fdc20e !important;
+}
+
+.stjr-container i {
+    border:0;
+    padding:0;
+}
+
+/* override Sitejabber styles */
+.stjr-review-page-widget__reviews {
+    border-top: none !important;
+}
+
+.w-tab-pane .stjr-review-page-widget {
+    border-radius: 1.39rem !important;
+    border: 2px solid #e5e6fb !important;
+}
+
+.stjr-review-helpful {
+    /*
+  display: none !important;
+  */
+}

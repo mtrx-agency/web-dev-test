@@ -1,0 +1,19 @@
+.swiper-container {
+    width: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
+.swiper-scrollbar-drag {
+    background-color: #0f0!important;
+}
+
+.site {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+}

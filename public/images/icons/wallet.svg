@@ -1,0 +1,8 @@
+<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="37" cy="36" r="36" fill="#8466FF"/>
+    <path d="M47.336 32.66V28.66C47.336 26.819 45.8641 25.3267 44.0484 25.3267H26.9525C25.1367 25.3267 23.6648 26.819 23.6648 28.66V33.3267" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47.336 39.3271V43.3271C47.336 45.1681 45.864 46.6605 44.0483 46.6605H36.8154" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.0484 32.6597H47.3361C48.0624 32.6597 48.6512 33.2566 48.6512 33.993V37.993C48.6512 38.7294 48.0624 39.3263 47.3361 39.3263H44.0484C42.2327 39.3263 40.7607 37.834 40.7607 35.993V35.993C40.7607 34.1521 42.2327 32.6597 44.0484 32.6597V32.6597Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="28.2674" cy="41.9932" rx="5.91781" ry="6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30.2573 40.8047L27.7718 43.3232L26.2776 41.8127" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
